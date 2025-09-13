@@ -1,6 +1,6 @@
 # Avaliação do Ensino Básico nos Municípios Brasileiros
 
-Investir em educação é um dos pilares para o desenvolvimento econômico e social de um país. Diante dos desafios do setor educacional no Brasil, é fundamental analisar como os recursos públicos são aplicados e como impactam o desempenho escolar dos estudantes. Este projeto propõe um **sistema de informação integrado**, capaz de consolidar dados sobre infraestrutura das escolas, recursos financeiros aplicados e desempenho educacional em avaliações nacionais das escolas sob responsabilidade dos municípios brasileiros. Essencialmente, estamos nos referindo à avaliação do ensino básico/fundamental (1º ano ao 9º ano) das redes municipais de ensino.
+Investir em educação é um dos pilares para o desenvolvimento econômico e social de um país. Diante dos desafios do setor educacional no Brasil, é fundamental analisar como os recursos públicos são aplicados e como impactam o desempenho escolar dos estudantes. Este projeto propõe um **sistema de informação integrado**, capaz de consolidar dados sobre infraestrutura das escolas, recursos financeiros aplicados e desempenho educacional em avaliações nacionais dos alunos das escolas de responsabilidade dos municípios brasileiros. Essencialmente, estamos nos referindo à avaliação do ensino básico/fundamental (1º ano ao 9º ano) das redes municipais de ensino.
 
 ---
 
@@ -41,6 +41,16 @@ O objetivo geral do projeto é possibilitar uma análise do cenário do ensino b
 - SAEB (Sistema de Avaliação da Educação Básica): https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/saeb/resultados
 - Censo Escolar (Sistema Educacenso): https://www.gov.br/inep/pt-br/areas-de-atuacao/pesquisas-estatisticas-e-indicadores/censo-escolar/resultados
 - FUNDEB (Fundo de Manutenção e Desenvolvimento da Educação Básica): https://sisweb.tesouro.gov.br/apex/f?p=2600:1
+
+**Descrição da Execução**
+
+Os dados brutos foram obtidos em formato de planilha Excel. Em seguida, foi realizada uma análise do conteúdo dos arquivos baixados para filtrar e selecionar quais campos seriam pertinentes para o objetivo do projeto.
+A modelagem dos dados foi realizada com o software de modelagem **ER Studio Data Architect versão 20.3.1**. Todo o processo de modelagem foi dividida em duas etapas: modelo lógico e físico.
+- Modelo lógico: modelagem conceitual da tabela e seus atributos (Figura 1).
+- Modelo físico: modelagem com as tabelas e atributos a serem implantados de fato no banco de dados **Postgre**, juntamente com as views (Figura 2).
+O processo de modelagem seguiu as boas práticas de nomenclatura das entidades, evitando caracteres especiais, espaçamento, letras minúsculas e preposições. O referido software de modelagem possui recurso para gerar **script DDL** para posterior criação das tabelas e views em banco.
+A execução do **script DDL** foi realizada com o uso do software **PGAdmin versão 4**, uma ferramenta para desenvolvimento e administração de banco de dados em **PostgreSQL**.
+O banco selecionado é o **Postgre versão 12** para o armazenamento dos dados. Sendo o **Postgre** um banco de dados relacional, foram realizadas operações ROLAP (Relational OLAP), que representa OLAP para bancos de dados relacionais.
 
 ---
 
