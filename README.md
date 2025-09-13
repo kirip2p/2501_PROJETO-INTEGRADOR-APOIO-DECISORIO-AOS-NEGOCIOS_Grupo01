@@ -97,9 +97,11 @@ Nesta etapa, foram utilizados os seguintes recursos do ETL (Figura 3):
 - Renamer: renomeia os nomes das colunas das planilhas para os atributos modelados no banco.
 
 Após a inserção dos dados no banco, foi possível realizar as operações ROLAP. Foram realizadas as seguintes pesquisas (query):
-- **Gasto total do FUNDEB** e **Quantidade total de matrículas no ensino fundamental** por estado – agregação ROLL-UP do nível municipal para estadual;
-- **Pesquisa das médias de Língua Portuguesa e Matemática na prova do Saeb do 5º ano e do 9º ano do ensino fundamental** para todos os municípios por ano - operação em fatiamento "dice";
-- 
+- **Gasto total do FUNDEB** e **Quantidade total de matrículas no ensino fundamental** por estado pra cada ano (2013 até 2023) – agregação ROLL-UP do nível municipal para estadual (foi exemplificado o ano 2013);
+- **Pesquisa das médias de Língua Portuguesa e Matemática na prova do Saeb do 5º ano e do 9º ano do ensino fundamental** pra cada ano (2013 até 2023) de todos os municípios - operação em fatiamento "dice" (foi exemplificado o ano 2013);
+- **Pesquisa das médias de Língua Portuguesa e Matemática na prova do Saeb do 5º ano e do 9º ano do ensino fundamental** pra cada município ao longo dos anos (2013 até 2023) - operação em fatiamento "slice" (foi exemplificado o município de Recife);
+- **Quantidade total de matrículas no ensino fundamental** pra cada ano (2013 até 2023) de todos os municípios - operação em fatiamento "dice" (foi exemplificado o ano 2013);
+- **Gasto total do FUNDEB** pra cada ano (2013 até 2023) de todos os municípios - operação em fatiamento "dice" (foi exemplificado o município de Recife).
 
 ---
 
