@@ -97,6 +97,9 @@ Nesta etapa, foram utilizados os seguintes recursos do ETL (Figura 3):
 - Renamer: renomeia os nomes das colunas das planilhas para os atributos modelados no banco.
 
 Após a inserção dos dados no banco, foi possível realizar as operações ROLAP. Foram realizadas as seguintes pesquisas (query):
+- **Gasto total do FUNDEB** e **Quantidade total de matrículas no ensino fundamental** por estado – agregação ROLL-UP do nível municipal para estadual;
+- **Pesquisa das médias de Língua Portuguesa e Matemática na prova do Saeb do 5º ano e do 9º ano do ensino fundamental** para todos os municípios por ano - operação em fatiamento "dice";
+- 
 
 ---
 
