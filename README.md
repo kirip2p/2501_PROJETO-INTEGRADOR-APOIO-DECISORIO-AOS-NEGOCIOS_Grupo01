@@ -48,6 +48,13 @@ Os dados brutos foram obtidos em formato de planilha Excel. Em seguida, foi real
 A modelagem dos dados foi realizada com o software de modelagem **ER Studio Data Architect versão 20.3.1**. Todo o processo de modelagem foi dividida em duas etapas: modelo lógico e físico.
 - Modelo lógico: modelagem conceitual da tabela e seus atributos (Figura 1).
 - Modelo físico: modelagem com as tabelas e atributos a serem implantados de fato no banco de dados **Postgre**, juntamente com as views (Figura 2).
+
+
+<img width="550" height="724" alt="image" src="https://github.com/user-attachments/assets/848ec479-3b75-4c86-9f47-ba5c4bf74bb7" />
+
+
+
+
 O processo de modelagem seguiu as boas práticas de nomenclatura das entidades, evitando caracteres especiais, espaçamento, letras minúsculas e preposições. O referido software de modelagem possui recurso para gerar **script DDL** para posterior criação das tabelas e views em banco.
 A execução do **script DDL** foi realizada com o uso do software **PGAdmin versão 4**, uma ferramenta para desenvolvimento e administração de banco de dados em **PostgreSQL**.
 O banco selecionado é o **Postgre versão 12** para o armazenamento dos dados. Sendo o **Postgre** um banco de dados relacional, foram realizadas operações ROLAP (Relational OLAP), que representa OLAP para bancos de dados relacionais.
