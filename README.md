@@ -34,7 +34,7 @@ Este projeto possibilitará a criação de métricas de eficiência, como **cust
 
 ---
 
-## Tecnologias e Técnicas
+## Implantação da Solução
 
 O objetivo geral do projeto é possibilitar uma análise do cenário do ensino básico/fundamental (1º ano ao 9º ano) das milhares de redes municipais de ensino público do Brasil a partir das principais fontes de dados abertos do governo federal. Foram então selecionados e obtidos dados das seguintes fontes:
 
@@ -43,7 +43,7 @@ O objetivo geral do projeto é possibilitar uma análise do cenário do ensino b
 - FUNDEB (Fundo de Manutenção e Desenvolvimento da Educação Básica): https://sisweb.tesouro.gov.br/apex/f?p=2600:1
 
 
-**Descrição da Execução da Solução**
+**Descrição da Solução: Tecnologias Usadas, Detalhamento Técnico, Execução da Etapa ETL, Operações OLAP Realizadas**
 
 Os dados brutos foram obtidos em formato de planilha Excel. Em seguida, foi realizada uma análise do conteúdo dos arquivos baixados para filtrar e selecionar quais campos seriam pertinentes para o objetivo do projeto.
 
@@ -97,7 +97,7 @@ Nesta etapa, foram utilizados os seguintes recursos do ETL (Figura 3):
 - Renamer: renomeia os nomes das colunas das planilhas para os atributos modelados no banco.
 
 Após a inserção dos dados no banco, foi possível realizar as operações ROLAP. Foram realizadas as seguintes pesquisas (query):
-- **Gasto total do FUNDEB** e **Quantidade total de matrículas no ensino fundamental** por estado pra cada ano (2013 até 2023) – agregação ROLL-UP do nível municipal para estadual (foi exemplificado o ano 2013);
+- **Gasto total do FUNDEB** e **Quantidade total de matrículas no ensino fundamental** por estado pra cada ano (2013 até 2023) – agregação roll-up do nível municipal para estadual (foi exemplificado o ano 2013);
 - **Pesquisa das médias de Língua Portuguesa e Matemática na prova do Saeb do 5º ano e do 9º ano do ensino fundamental** pra cada ano (2013 até 2023) de todos os municípios - operação em fatiamento "dice" (foi exemplificado o ano 2013);
 - **Pesquisa das médias de Língua Portuguesa e Matemática na prova do Saeb do 5º ano e do 9º ano do ensino fundamental** pra cada município ao longo dos anos (2013 até 2023) - operação em fatiamento "slice" (foi exemplificado o município de Recife);
 - **Quantidade total de matrículas no ensino fundamental** pra cada ano (2013 até 2023) de todos os municípios - operação em fatiamento "dice" (foi exemplificado o ano 2013);
