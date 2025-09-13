@@ -43,7 +43,7 @@ O objetivo geral do projeto é possibilitar uma análise do cenário do ensino b
 - FUNDEB (Fundo de Manutenção e Desenvolvimento da Educação Básica): https://sisweb.tesouro.gov.br/apex/f?p=2600:1
 
 
-**Descrição da Execução**
+**Descrição da Execução da Solução**
 
 Os dados brutos foram obtidos em formato de planilha Excel. Em seguida, foi realizada uma análise do conteúdo dos arquivos baixados para filtrar e selecionar quais campos seriam pertinentes para o objetivo do projeto.
 
@@ -71,15 +71,25 @@ A execução do **script DDL** foi realizada com o uso do software **PGAdmin ver
 O banco selecionado é o **Postgre versão 12** para o armazenamento dos dados. Sendo o **Postgre** um banco de dados relacional, foram realizadas operações ROLAP (Relational OLAP), que representa OLAP para bancos de dados relacionais.
 
 A execução do DDL criou as seguintes tabelas e views:
-    • avaliação_muncipio;
-    • v_avaliacao_2013;
-    • v_avaliacao_2015;
-    • v_avaliacao_2017;
-    • v_avaliacao_2019;
-    • v_avaliacao_2021;
-    • v_avaliacao_2023.
+- avaliação_muncipio;
+- v_avaliacao_2013;
+- v_avaliacao_2015;
+- v_avaliacao_2017;
+- v_avaliacao_2019;
+- v_avaliacao_2021;
+- v_avaliacao_2023.
 
-A inserção dos dados no banco foi realizado por meio de um software ETL. Os dados da planilha obtidos nas fontes de dados foram convertidos e inseridos diretamente no banco de dados. Por esta razão , não foi necessário desenvolver o script de inserção de dados em linguagem SQL.
+A inserção dos dados no banco foi realizado por meio de um software ETL. Os dados da planilha obtidos nas fontes de dados foram convertidos e inseridos diretamente no banco de dados. Por esta razão, não foi necessário desenvolver o script de inserção de dados em linguagem SQL.
+
+O software ETL utilizado para esta operação é o **FME, versão 2025**.
+
+A utilização do ETL foi fundamental para o tratamento e conversão dos dados brutos antes do armazenamento em banco. 
+
+<img width="597" height="288" alt="image" src="https://github.com/user-attachments/assets/1b688e15-9149-4347-b454-b2f0431afa5c" />
+
+**Figura 3. Macro-fluxo dos Dados.**
+
+Nesta etapa, foram utilizados os seguintes recursos do ETL:
 
 ---
 
