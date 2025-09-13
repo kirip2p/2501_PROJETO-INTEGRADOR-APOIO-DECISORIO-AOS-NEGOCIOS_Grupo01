@@ -31,5 +31,11 @@ Investir em educação é um dos pilares para o desenvolvimento econômico e soc
 
 ---
 
+## Tecnologias e Técnicas
+
+O objetivo do projeto é uma análise do cenário educacional a paritr das principais fontes de dados abertos do governo federal. Foram então selecionados e obtidos dados das seguintes instituições:
+
+---
+
 Ao integrar informações dispersas sobre educação, este projeto fortalece a transparência na gestão pública e contribui para o desenvolvimento de políticas educacionais fundamentadas em dados confiáveis, mantendo-se fiel aos objetivos do estudo original.
 
