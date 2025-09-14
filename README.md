@@ -110,3 +110,12 @@ Após a inserção dos dados no banco, foi possível realizar as operações ROL
 
 Ao integrar informações dispersas sobre educação, este projeto fortalece a transparência na gestão pública e contribui para o desenvolvimento de políticas educacionais fundamentadas em dados confiáveis.
 
+---
+
+## Grupo
+
+- Cesar Inui
+- Douglas Bazo de Castro
+- Felipe Alves Nilo
+- Michel Ferreira da Silva
+- Polyanna Ynaí Miranda Simões 
