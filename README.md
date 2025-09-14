@@ -57,7 +57,8 @@ A modelagem dos dados foi realizada com o software de modelagem **ER Studio Data
 **Figura 1. Modelo Lógico.**
 
 
-<img width="550" height="724" alt="image" src="https://github.com/user-attachments/assets/efb199b2-a254-4af8-bcc0-24e655fc6b93" />
+<img width="1087" height="775" alt="image" src="https://github.com/user-attachments/assets/fcc0c64f-98e3-4663-b176-8af4c860a4d8" />
+
 
 **Figura 2. Modelo Físico.**
 
@@ -91,7 +92,7 @@ A utilização do ETL foi fundamental para o tratamento e conversão dos dados b
 
 Nesta etapa, foram utilizados os seguintes recursos do ETL (Figura 3):
 - Filtragem: seleção e remoção de atributos desnecessários.
-- Replacement: substituição, remoção e limpeza de caracteres para padronizar o conteúdo do atributo em formato numérico, necessário para cálculos matemáticas. Por exemplo, remoção do prefixo “R$” em campos de valor monetário.
+- Replacement: substituição, remoção e limpeza de caracteres para padronizar o conteúdo do atributo em formato numérico, necessário para cálculos matemáticos. Por exemplo, remoção do prefixo “R$” em campos de valor monetário.
 - Tester: filtro de condições em campos. No caso do projeto, foram utilizados somente dados do tipo “municipal”.
 - Merger: integra os dados das fontes distintas em uma tabela única por meio de um campo em comum.
 - Renamer: renomeia os nomes das colunas das planilhas para os atributos modelados no banco.
