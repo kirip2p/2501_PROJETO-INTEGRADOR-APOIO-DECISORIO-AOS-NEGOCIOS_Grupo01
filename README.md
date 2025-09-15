@@ -72,7 +72,7 @@ A execução do **script DDL** foi realizada com o uso do software **PGAdmin ver
 O banco selecionado é o **Postgre versão 12** para o armazenamento dos dados. Sendo o **Postgre** um banco de dados relacional, foram realizadas operações ROLAP (Relational OLAP), que representa OLAP para bancos de dados relacionais.
 
 A execução do DDL criou as seguintes tabelas e views:
-- avaliação_muncipio;
+- avaliacao_municipio;
 - v_avaliacao_2013;
 - v_avaliacao_2015;
 - v_avaliacao_2017;
